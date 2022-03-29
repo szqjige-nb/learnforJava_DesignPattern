@@ -1,5 +1,10 @@
 package _1principle._5ocp.improve;
 
+/***
+ * @Author szq
+ * @Description //TODO
+ *@Date 2021/9/5 10:53
+ **/
 public class Ocp {
 
 	public static void main(String[] args) {

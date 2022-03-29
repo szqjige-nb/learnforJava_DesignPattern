@@ -1,10 +1,12 @@
 package _1principle._3inversion.my;
 
-/**
- * @author 孟享广
- * @date 2020-08-06 2:18 下午
- * @description
- */
+/***
+ * @Author szq
+ * @Description  接口传递
+ *@Date 2021/9/4 10:09
+ * @Param 
+ * @return 
+ **/
 public class DependecyInversion {
     public static void main(String[] args) {
         Person person = new Person();

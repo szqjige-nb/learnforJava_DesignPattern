@@ -1,5 +1,12 @@
 package _1principle._3inversion;
 
+/***
+ * @Author szq
+ * @Description 原始版本
+ *@Date 2021/9/4 9:48
+ * @Param
+ * @return
+ **/
 public class DependecyInversion {
 
 	public static void main(String[] args) {
@@ -23,6 +30,7 @@ class Email {
 //3. 解决思路：引入一个抽象的接口IReceiver, 表示接收者, 这样Person类与接口IReceiver发生依赖
 //   因为Email, WeeiiXiin 等等属于接收的范围，他们各自实现IReceiver 接口就ok, 这样我们就符号依赖倒转原则
 class Person {
+
 	public void receive(Email email ) {
 		System.out.println(email.getInfo());
 	}

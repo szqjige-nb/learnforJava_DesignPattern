@@ -1,39 +1,45 @@
 package _1principle._3inversion.improve;
 
+/***
+ * @Author szq
+ * @Description  改进
+ *@Date 2021/9/4 9:56
+ * @return
+ **/
 public class DependecyInversion {
 
-	public static void main(String[] args) {
-		//客户端无需改变
-		Person person = new Person();
-		person.receive(new Email());
+    public static void main(String[] args) {
+        //客户端无需改变
+        Person person = new Person();
+        person.receive(new Email());
 
-		person.receive(new WeiXin());
-	}
+        person.receive(new WeiXin());
+    }
 
 }
 
 //定义接口
 interface IReceiver {
-	public String getInfo();
+    public String getInfo();
 }
 
 class Email implements IReceiver {
-	public String getInfo() {
-		return "电子邮件信息: hello,world";
-	}
+    public String getInfo() {
+        return "电子邮件信息: hello,world";
+    }
 }
 
 //增加微信
 class WeiXin implements IReceiver {
-	public String getInfo() {
-		return "微信信息: hello,ok";
-	}
+    public String getInfo() {
+        return "微信信息: hello,ok";
+    }
 }
 
 //方式2
 class Person {
-	//这里我们是对接口的依赖
-	public void receive(IReceiver receiver ) {
-		System.out.println(receiver.getInfo());
-	}
+    //这里我们是对接口的依赖
+    public void receive(IReceiver receiver) {
+        System.out.println(receiver.getInfo());
+    }
 }
