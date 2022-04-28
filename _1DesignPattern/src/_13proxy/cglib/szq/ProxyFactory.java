@@ -35,8 +35,11 @@ public class ProxyFactory implements MethodInterceptor {
      * @Author szq
      * @Description 重新方法
      *@Date 2022/3/27 20:12
-     * @Param
-     * @return
+     * @param  o ?
+     * @param method 方法
+     * @param  args 参数
+     * @param  methodProxy ？
+     * @return 返回执行结果
      **/
     @Override
     public Object intercept(Object o, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {

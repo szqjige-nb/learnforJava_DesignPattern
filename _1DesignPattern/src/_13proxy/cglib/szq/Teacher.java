@@ -8,7 +8,8 @@ package _13proxy.cglib.szq;
  *@Version 1.0
  **/
 public class Teacher {
-    public  void teach(){
+    public  String teach(String str){
         System.out.printf("老师正在教书");
+        return str;
     }
 }
